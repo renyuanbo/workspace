@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+  <RelativeLayout    
+      android:id="@+id/wholeGuiLayout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" >
+            <RelativeLayout
+        android:id="@+id/eventLayout"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="150dp" >
+        
+        <RelativeLayout
+          android:id="@+id/event1Layout"
+          android:layout_width="250dp"
+          android:layout_marginLeft = "50dp"
+          android:layout_height="150dp" >       
+	       <TextView
+	          android:id="@+id/currentEvent1Text"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:text="#1                 Event     :           Heat" />
+		    <ImageView
+			        android:id="@+id/event1Event10DigPic"
+			        android:layout_width="60dp"
+			        android:layout_height="80dp"
+			        android:layout_below="@+id/currentEvent1Text"
+			        android:layout_marginLeft="0dp"  
+			        android:layout_marginTop="2dp" />
+		     <ImageView
+			        android:id="@+id/event1EventDigPic"
+			        android:layout_width="60dp"
+			        android:layout_height="80dp"
+			        android:layout_below="@+id/currentEvent1Text"
+	                android:layout_marginLeft="60dp"  
+	                android:layout_marginTop="2dp"/>
+		     <ImageView
+			        android:id="@+id/event1Heat10DigPic"
+			        android:layout_width="40dp"
+			        android:layout_height="60dp"
+			        android:layout_below="@+id/currentEvent1Text"
+	                android:layout_marginLeft="130dp" />
+		      <ImageView
+			        android:id="@+id/event1HeatDigPic"
+			        android:layout_width="40dp"
+			        android:layout_height="60dp"
+			        android:layout_below="@+id/currentEvent1Text"
+	                android:layout_marginLeft="170dp"/>
+	     </RelativeLayout>
+
+       <RelativeLayout       
+        android:id="@+id/event2Layout"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_toRightOf="@+id/event1Layout"
+        android:layout_marginLeft="0dp" >
+	         
+	      <TextView
+            android:id="@+id/currentEvent2Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  #2          Event     :    Heat"/>
+	      <ImageView
+		        android:id="@+id/event2Event10DigPic"
+		        android:layout_width="60dp"
+		        android:layout_height="80dp"
+		        android:layout_below="@+id/currentEvent2Text"/>
+	     <ImageView
+		        android:id="@+id/event2EventDigPic"
+		        android:layout_width="60dp"
+		        android:layout_height="80dp"
+		        android:layout_below="@+id/currentEvent2Text"
+                android:layout_marginLeft="60dp"/>
+	     <ImageView
+		        android:id="@+id/event2Heat10DigPic"
+		        android:layout_width="40dp"
+		        android:layout_height="60dp"
+		        android:layout_below="@+id/currentEvent2Text"
+                android:layout_marginLeft="130dp" />
+	      <ImageView
+		        android:id="@+id/event2HeatDigPic"
+		        android:layout_width="40dp"
+		        android:layout_height="60dp"
+		        android:layout_below="@+id/currentEvent2Text"
+                android:layout_marginLeft="170dp" />
+	      </RelativeLayout>	
+		   </RelativeLayout>   
+		   
+   <RelativeLayout
+      android:id="@+id/regEventLayout"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      android:layout_centerHorizontal="true"
+      android:layout_below="@+id/eventLayout" >
+
+      <TextView
+          android:id="@+id/currentRegEventText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="REG Event" />
+
+      <ImageView
+          android:id="@+id/regEvent10DigPic"
+          android:layout_width="60dp"
+          android:layout_height="80dp"
+          android:layout_below="@+id/currentRegEventText"
+          android:layout_alignParentLeft="true" />
+
+      <ImageView
+          android:id="@+id/regEventDigPic"
+          android:layout_width="60dp"
+          android:layout_height="80dp"
+          android:layout_below="@+id/currentRegEventText"
+          android:layout_marginLeft="60dp" />
+  </RelativeLayout>
+        
+        
+        
+ </RelativeLayout>
+
+
+
+</LinearLayout>
